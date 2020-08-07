@@ -1,4 +1,4 @@
-package com.company;
+package com.ykolesnyk;
 
 import java.util.Date;
 
@@ -15,7 +15,7 @@ public class Contact {
     long phoneNumber;
 
     //Address
-    Address adress123;
+    Address address;
 
     // Date of birth
     Date date;

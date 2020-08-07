@@ -1,4 +1,4 @@
-package com.company;
+package com.ykolesnyk;
 
 public class Main {
 
@@ -13,5 +13,9 @@ public class Main {
             // Search by phone
             // Search query input
             // Display search results in console
+        Address address = new Address();
+        address.setHouseNumber(100);
+        //address.getHouseNumber();
+        System.out.println(address.getHouseNumber());
     }
 }
