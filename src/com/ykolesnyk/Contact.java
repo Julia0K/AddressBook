@@ -6,18 +6,57 @@ public class Contact {
 
     // Save Contacts
     // Name
-    String name;
+    private String name;
 
     // Last name
-    String lastName;
+    private String lastName;
 
     // Phone number
-    long phoneNumber;
+     private long phoneNumber;
 
     //Address
-    Address address;
+    private Address address;
 
     // Date of birth
-    Date date;
+    private Date date;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public com.ykolesnyk.Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(com.ykolesnyk.Address address) {
+        this.address = address;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 }
