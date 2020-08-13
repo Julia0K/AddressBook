@@ -6,7 +6,7 @@ public class Contact {
 
     // Save Contacts
     // Name
-    private String name;
+    private String firstName;
 
     // Last name
     private String lastName;
@@ -20,12 +20,12 @@ public class Contact {
     // Date of birth
     private Date date;
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
