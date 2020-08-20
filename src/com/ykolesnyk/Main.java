@@ -34,7 +34,7 @@ public class Main {
         contact.setLastName(lastName);
         contact.setPhoneNumber(phoneNumber);
         contact.setDate(dateOfBirth);
-        System.out.println(contact.getFirstName() +"\n"+ contact.getLastName() + "\n"+ contact.getPhoneNumber() + "\n" + contact.getDate());
+        System.out.println(contact.getFirstName() +"\n"+ contact.getLastName() + "\n"+ contact.getPhoneNumber() + "\n" + contact.getDateOfBirth());
 
         return contact;
     }

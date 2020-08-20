@@ -52,7 +52,7 @@ public class Contact {
         this.address = address;
     }
 
-    public Date getDate() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
