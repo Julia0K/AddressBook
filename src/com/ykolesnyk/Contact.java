@@ -18,7 +18,7 @@ public class Contact {
     private Address address;
 
     // Date of birth
-    private Date date;
+    private Date dateOfBirth;
 
     public String getFirstName() {
         return firstName;
@@ -53,10 +53,10 @@ public class Contact {
     }
 
     public Date getDate() {
-        return date;
+        return dateOfBirth;
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.dateOfBirth = date;
     }
 }

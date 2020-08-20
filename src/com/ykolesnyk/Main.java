@@ -24,16 +24,16 @@ public class Main {
         String firstName = textInput("first name");
         String lastName = textInput("last name");
         long phoneNumber = Long.parseLong(textInput("phone number"));
-        Date date = textInput("date if birth");
-        createContact(firstName, lastName, phoneNumber, date);
+        Date dateOfBirth = textInput("date of birth");
+        createContact(firstName, lastName, phoneNumber, dateOfBirth);
     }
 
-    public static Contact createContact(String firstName, String lastName, long phoneNumber, Date date) { // <--- all this row is method signature
+    public static Contact createContact(String firstName, String lastName, long phoneNumber, Date dateOfBirth) { // <--- all this row is method signature
         Contact contact = new Contact(); // <--- Creates new object Contact
         contact.setFirstName(firstName);
         contact.setLastName(lastName);
         contact.setPhoneNumber(phoneNumber);
-        contact.setDate(Date.date);
+        contact.setDate(dateOfBirth);
         System.out.println(contact.getFirstName() +"\n"+ contact.getLastName() + "\n"+ contact.getPhoneNumber() + "\n" + contact.getDate());
 
         return contact;
