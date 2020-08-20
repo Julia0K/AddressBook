@@ -44,7 +44,7 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    public com.ykolesnyk.Address getAddress() {
+    public Address getAddress() {
         return address;
     }
 

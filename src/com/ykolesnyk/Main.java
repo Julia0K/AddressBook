@@ -24,8 +24,8 @@ public class Main {
         String firstName = textInput("first name");
         String lastName = textInput("last name");
         long phoneNumber = Long.parseLong(textInput("phone number"));
-        Date dateOfBirth = textInput("date of birth");
-        createContact(firstName, lastName, phoneNumber, dateOfBirth);
+        //Date dateOfBirth = textInput("date of birth");
+        //createContact(firstName, lastName, phoneNumber, dateOfBirth);
     }
 
     public static Contact createContact(String firstName, String lastName, long phoneNumber, Date dateOfBirth) { // <--- all this row is method signature
