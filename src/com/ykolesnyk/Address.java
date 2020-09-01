@@ -8,6 +8,14 @@ public class Address {
     private String state;
     private int zipCode;
 
+    public Address(int houseNumber, String streetName, String cityName, String state, int zipCode) {
+        this.houseNumber = houseNumber;
+        this.streetName = streetName;
+        this.cityName = cityName;
+        this.state = state;
+        this.zipCode = zipCode;
+    }
+
     public int getHouseNumber() {
         return houseNumber;
     }

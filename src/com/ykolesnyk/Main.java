@@ -8,19 +8,10 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        //TO DO:
-        // Save Contacts
-        // Name
-        // Last name
-        // Phone number
-        // Address
-        // Date of birth
-        // Search by phone
-        // Search query input
-        // Display search results in console
-        Address address = new Address();
-        address.setHouseNumber(100);
-        System.out.println(address.getHouseNumber());
+        /*TO DO:
+        Fields: First Name, Last name, Phone number, Date of Birth, Address
+        Functionality: Save Contacts, Delete contacts, Search by phone/lastName/firstname, search input, displaying results */
+
         String firstName = textInput("first name");
         String lastName = textInput("last name");
         long phoneNumber = Long.parseLong(textInput("phone number"));
@@ -33,8 +24,7 @@ public class Main {
         contact.setFirstName(firstName);
         contact.setLastName(lastName);
         contact.setPhoneNumber(phoneNumber);
-        contact.setDate(dateOfBirth);
-        System.out.println(contact.getFirstName() +"\n"+ contact.getLastName() + "\n"+ contact.getPhoneNumber() + "\n" + contact.getDateOfBirth());
+        System.out.println(contact.getFirstName() +"\n"+ contact.getLastName() + "\n"+ contact.getPhoneNumber());
 
         return contact;
     }
