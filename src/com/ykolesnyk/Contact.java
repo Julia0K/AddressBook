@@ -20,6 +20,13 @@ public class Contact {
     // Date of birth
     private Date dateOfBirth;
 
+    public Contact(String firstName, String lastName, long phoneNumber, Address address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -58,5 +65,15 @@ public class Contact {
 
     public void setDate(Date date) {
         this.dateOfBirth = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                ", address=" + address +
+                '}';
     }
 }
