@@ -10,6 +10,7 @@ public class Main {
 
         printHelp();
 
+        // TODO: 9/3/20 Поменять условие в цикле с true на комманду выхода 
         while (true) {
             String command = InputHelper.textInput("Enter command:");
 
