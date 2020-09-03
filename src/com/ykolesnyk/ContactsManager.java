@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class ContactsManager {
 
+    // TODO: 9/3/20 Поменять storage на ArrayList c <>
+    // TODO: 9/3/20 Вынести storage в отдельный класс
+    // TODO: 9/3/20
+
     Contact[] contacts = new Contact[100];
 
     public ArrayList<Contact> getAllContacts() {
@@ -71,5 +75,7 @@ public class ContactsManager {
         }
         return foundContacts;
     }
+
+
 
 }
