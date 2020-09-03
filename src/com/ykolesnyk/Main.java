@@ -10,10 +10,10 @@ public class Main {
 
         printHelp();
 
-        while(true) {
+        while (true) {
             String command = InputHelper.textInput("Enter command:");
 
-            switch (command){
+            switch (command) {
                 case "add": {
                     contactService.createContact();
                 }
@@ -56,7 +56,7 @@ public class Main {
 
     }
 
-    private static void printHelp(){
+    private static void printHelp() {
         System.out.println("*****************************************************");
         System.out.println("*           Address book v.0.0.1                    *");
         System.out.println("*****************************************************");

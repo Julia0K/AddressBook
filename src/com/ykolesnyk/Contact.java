@@ -12,7 +12,7 @@ public class Contact {
     private String lastName;
 
     // Phone number
-     private long phoneNumber;
+    private long phoneNumber;
 
     //Address
     private Address address;

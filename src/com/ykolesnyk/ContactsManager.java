@@ -30,8 +30,8 @@ public class ContactsManager {
 
     //deleting the contact by first & last name
     public boolean deleteContact(String firstName, String lastName) {
-        for (int i=0; i<contacts.length; i++) {
-            if(contacts[i] !=null && contacts[i].getFirstName().equals(firstName) && contacts[i].getLastName().equals(lastName)) {
+        for (int i = 0; i < contacts.length; i++) {
+            if (contacts[i] != null && contacts[i].getFirstName().equals(firstName) && contacts[i].getLastName().equals(lastName)) {
                 contacts[i] = null;
                 break;
             }
@@ -49,6 +49,7 @@ public class ContactsManager {
         }
         return foundContacts;
     }
+
     // search by last name
     public ArrayList<Contact> searchByLastName(String lastName) {
         ArrayList<Contact> foundContacts = new ArrayList<>();
@@ -59,6 +60,7 @@ public class ContactsManager {
         }
         return foundContacts;
     }
+
     // search by phone
     public ArrayList<Contact> searchByPhoneNumber(String phoneNumber) {
         ArrayList<Contact> foundContacts = new ArrayList<>();
