@@ -4,13 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ContactService {
-    /* Constructor to create contactManager;
-    methods: create contact: accepts text input and add contact to contact manager
-    delete contact: text input with prompt: enter first name, enter last name, are you sure? Yes or No
-    search: by name, last name, phone number
-    display all contacts
-    create couple contacts un manager
-     */
+
     private ContactsManager manager;
 
     public ContactService() {

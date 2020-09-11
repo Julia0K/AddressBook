@@ -4,14 +4,16 @@ import java.io.IOException;
 
 public class Main {
 
-    private static ContactService contactService = new ContactService();
+    private static final ContactService contactService = new ContactService();
 
     public static void main(String[] args) throws IOException {
 
         printHelp();
+        boolean isRunning = true;
 
-        // TODO: 9/3/20 Поменять условие в цикле с true на комманду выхода 
-        while (true) {
+        // TODO: 9/3/20 Поменять условие в цикле с true на комманду выхода
+
+        while (isRunning) {
             String command = InputHelper.textInput("Enter command:");
 
             switch (command) {
@@ -40,7 +42,7 @@ public class Main {
                 }
                 break;
                 case "exit": {
-                    System.exit(1);
+                    isRunning = false;
                 }
                 break;
                 case "help": {
@@ -53,6 +55,8 @@ public class Main {
                 }
             }
         }
+
+        System.out.println("The program has been finished");
 
 
     }

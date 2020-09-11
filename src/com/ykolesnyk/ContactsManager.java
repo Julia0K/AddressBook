@@ -2,13 +2,15 @@ package com.ykolesnyk;
 
 import java.util.ArrayList;
 
+import static com.ykolesnyk.Storage.contacts;
+
 public class ContactsManager {
 
     // TODO: 9/3/20 Поменять storage на ArrayList c <>
     // TODO: 9/3/20 Вынести storage в отдельный класс
-    // TODO: 9/3/20
 
-    Contact[] contacts = new Contact[100];
+    //Contact[] contacts = new Contact[100];
+    //ArrayList<Contact> contacts = new ArrayList<>();
 
     public ArrayList<Contact> getAllContacts() {
         ArrayList<Contact> allContacts = new ArrayList<>();
@@ -23,31 +25,39 @@ public class ContactsManager {
     // this method will add new contacts
     public boolean addContact(Contact contact) {
 
-        for (int i = 0; i < contacts.length; i++) {
+       /* for (int i = 0; i < contacts.size(); i++) {
             if (contacts[i] == null) {
                 contacts[i] = contact;
                 return true;
             }
         }
         return false;
+
+        */
+        return contacts.add(contact);
+
     }
 
     //deleting the contact by first & last name
     public boolean deleteContact(String firstName, String lastName) {
-        for (int i = 0; i < contacts.length; i++) {
-            if (contacts[i] != null && contacts[i].getFirstName().equals(firstName) && contacts[i].getLastName().equals(lastName)) {
-                contacts[i] = null;
+        boolean result = false;
+        for (int i = 0; i < contacts.size(); i++) {
+            if (contacts.get(i).getFirstName().equals(firstName) && contacts.get(i).getLastName().equals(lastName)) {
+                Contact lastElement = contacts.get(contacts.size() -1);
+                contacts.set(i, lastElement);
+                contacts.remove(contacts.size() -1);
+                result = true;
                 break;
             }
         }
-        return false;
+        return result;
     }
 
     //search by first name
     public ArrayList<Contact> searchByFirstName(String firstName) {
         ArrayList<Contact> foundContacts = new ArrayList<>();
         for (Contact contact : contacts) {
-            if (contact != null && contact.getFirstName().equals(firstName)) {
+            if (contact.getFirstName().equals(firstName)) {
                 foundContacts.add(contact);
             }
         }
@@ -58,7 +68,7 @@ public class ContactsManager {
     public ArrayList<Contact> searchByLastName(String lastName) {
         ArrayList<Contact> foundContacts = new ArrayList<>();
         for (Contact contact : contacts) {
-            if (contact != null && contact.getLastName().equals(lastName)) {
+            if (contact.getLastName().equals(lastName)) {
                 foundContacts.add(contact);
             }
         }
@@ -69,7 +79,7 @@ public class ContactsManager {
     public ArrayList<Contact> searchByPhoneNumber(String phoneNumber) {
         ArrayList<Contact> foundContacts = new ArrayList<>();
         for (Contact contact : contacts) {
-            if (contact != null && contact.getPhoneNumber() == Long.parseLong(phoneNumber)) {
+            if (contact.getPhoneNumber() == Long.parseLong(phoneNumber)) {
                 foundContacts.add(contact);
             }
         }
