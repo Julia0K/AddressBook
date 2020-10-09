@@ -92,4 +92,8 @@ public class ContactService {
         }
     }
 
+    public void deleteAll() {
+        manager.removeAll();
+    }
+
 }

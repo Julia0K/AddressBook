@@ -22,8 +22,8 @@ public class ContactsManager {
 
     // this method will add new contacts
     public boolean addContact(Contact contact) {
-        return contacts.add(contact);
 
+        return contacts.add(contact);
     }
 
     //deleting the contact by first & last name
@@ -74,6 +74,8 @@ public class ContactsManager {
         return foundContacts;
     }
 
-
+    public void removeAll() {
+        contacts.clear();
+    }
 
 }
