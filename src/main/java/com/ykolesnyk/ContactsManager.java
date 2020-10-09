@@ -9,8 +9,6 @@ public class ContactsManager {
     // TODO: 9/3/20 Поменять storage на ArrayList c <>
     // TODO: 9/3/20 Вынести storage в отдельный класс
 
-    //Contact[] contacts = new Contact[100];
-    //ArrayList<Contact> contacts = new ArrayList<>();
 
     public ArrayList<Contact> getAllContacts() {
         ArrayList<Contact> allContacts = new ArrayList<>();
@@ -24,16 +22,6 @@ public class ContactsManager {
 
     // this method will add new contacts
     public boolean addContact(Contact contact) {
-
-       /* for (int i = 0; i < contacts.size(); i++) {
-            if (contacts[i] == null) {
-                contacts[i] = contact;
-                return true;
-            }
-        }
-        return false;
-
-        */
         return contacts.add(contact);
 
     }
